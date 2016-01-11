@@ -1,7 +1,7 @@
-# Heroku buildpack: Python
+# Heroku buildpack: Python with python-ldap
 ![python-banner](https://cloud.githubusercontent.com/assets/51578/8914205/ecf2047c-346b-11e5-98c5-42547f9f4410.jpg)
 
-This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Python apps, powered by [pip](http://www.pip-installer.org/).
+This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Python apps with `python-ldap` package requirement, powered by [pip](http://www.pip-installer.org/).
 
 This buildpack supports running Django and Flask apps.
 
@@ -52,3 +52,5 @@ Runtime options include:
 - pypy3-2.4.0 (unsupported, experimental)
 
 Other [unsupported runtimes](https://github.com/heroku/heroku-buildpack-python/tree/master/builds/runtimes) are available as well.
+
+Adds support for `python-ldap` package. Nothing more than `python-ldap` specified in requirements.txt file is needed.

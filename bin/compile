@@ -192,6 +192,11 @@ source $BIN_DIR/steps/cryptography
 # GDAL support.
 source $BIN_DIR/steps/gdal
 
+# Install python-ldap if needed.
+if grep -q python-ldap requirements.txt; then
+    source $BIN_DIR/steps/python-ldap
+fi
+
 # Install dependencies with Pip.
 source $BIN_DIR/steps/pip-install
 
