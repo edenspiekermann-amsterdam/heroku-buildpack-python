@@ -103,5 +103,5 @@ rm -rf tmpdir
 
 fi
 
-bpwatch end ldap_install
+bpwatch stop ldap_install
 
