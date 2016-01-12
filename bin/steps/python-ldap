@@ -1,5 +1,4 @@
 # Install python-ldap
-puts-step "Installing python-ldap"
 
 GROFF_VERSION=1.21
 GROFF_URL=ftp://ftp.gnu.org/gnu/groff/groff-${GROFF_VERSION}.tar.gz
@@ -15,6 +14,8 @@ source $BIN_DIR/utils
 bpwatch start ldap_install
 
 if (pip-grep -s requirements.txt python-ldap &> /dev/null) then
+
+puts-step "Installing python-ldap"
 
 mkdir -p $CACHE_DIR/.python-ldap
 mkdir -p $BUILD_DIR/.python-ldap
