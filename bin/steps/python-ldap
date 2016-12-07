@@ -12,7 +12,7 @@ OPENLDAP_URL=http://www.openldap.org/software/download/OpenLDAP/openldap-release
 source $BIN_DIR/utils
 
 echo "Trying to install python-dev tools"
-sudo apt-get install python-dev
+apt-get install python-dev
 
 bpwatch start ldap_install
 
